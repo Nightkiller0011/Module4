@@ -1,5 +1,5 @@
 """
-ASGI config for my_project_name project.
+ASGI config for dndWebApp project.
 
 It exposes the ASGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.asgi import get_asgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'my_project_name.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'dndWebApp.settings')
 
 application = get_asgi_application()
