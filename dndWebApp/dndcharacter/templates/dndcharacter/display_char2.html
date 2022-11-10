@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Rock, Paper, Scissors</title>
+
+    </head>
+
+    <body>
+        <h1>Lets play a game!</h1>
+        <h2></h2>
+
+        <div>
+            <input type="text" id="input1" placeholder="Rock, Paper, or Scissors?">
+            <button type="button" onclick="execute()">Go!</button>
+            </div>
+            <p id="display"></p>
+
+    </body>
+    <script>
+    function execute() {
+        let move = (document.getElementById("input1").value);
+        let answer = "The Computer played: ";
+        let num = Math.floor(Math.random() * 3);
+        if(num == 0)
+        {
+            answer+="Rock";
+        }
+        if(num == 1)
+        {
+            answer+="Paper";
+        }
+        if(num == 2)
+        {
+            answer+="Scissors";
+        }
+
+        document.getElementById('display').innerHTML = answer;
+    } 
+        
+
+    </script>
+</html>

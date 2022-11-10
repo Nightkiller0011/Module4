@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Dice Roller</title>
+
+    </head>
+
+    <body>
+        <h1>Roll Dice Here!</h1>
+        <h2></h2>
+
+        <div>
+            <input type="text" id="input1" placeholder="How many sides?">
+            <input type="text" id="input2" placeholder="How many Dice?">
+            <button type="button" onclick="execute()">Roll Dice</button>
+            </div>
+            <p id="display"></p>
+
+    </body>
+    <script>
+    function execute() {
+        let sides = parseInt(document.getElementById("input1").value);
+        let dice = parseInt(document.getElementById("input2").value);
+        let answer = "Your rolls are: ";
+        for (let i = 0; i < dice; i++){
+            let num = Math.floor(Math.random() * (sides+1)+1);
+            answer += num + ", ";
+        }
+
+        document.getElementById('display').innerHTML = answer;
+    } 
+        
+
+    </script>
+</html>

@@ -15,7 +15,11 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from dndcharacter import views as vw
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('test/', vw.index, name = "test"),
+    path('characters1/', vw.mychar, name = "myChar"),
+    path('characters2/', vw.char2, name = "char2"),
 ]
