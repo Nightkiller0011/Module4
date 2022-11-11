@@ -23,7 +23,7 @@
         let dice = parseInt(document.getElementById("input2").value);
         let answer = "Your rolls are: ";
         for (let i = 0; i < dice; i++){
-            let num = Math.floor(Math.random() * (sides+1)+1);
+            let num = Math.floor(Math.random() * (sides)+1);
             answer += num + ", ";
         }
 
